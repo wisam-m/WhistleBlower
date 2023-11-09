@@ -1,21 +1,12 @@
 # WhistleBlower
 
-## Project URL
-
-Frontend: https://whistle-blower.live
-Server: https://whistleblower-backend.me
-
-## Project Video URL
-
-https://youtu.be/XlbhgpN6Ehw
-
 ## Project Description
 
-Our project is an online social web platform where user can create, signup and login to make post about this work places. User can create story and post about their work, to share their experience with the their own respective community. User who are not login can browse posts and comments, for those that are logged in can create post and comments. There is also this verification step where user can take a picture of their ID (eg: UofT student Card), and following the step step of taking a selfie, We would then compare the two image and check for similarity, which then verify the user identity relative to the associated work/education environment. Verified would then be able to share post along with their specified tags, tags that are verified by our platform.
+This is an online social web platform where user can create, signup and login to make post about this work places. User can create story and post about their work, to share their experience with the their own respective community. User who are not login can browse posts and comments, for those that are logged in can create post and comments. There is also this verification step where user can take a picture of their ID (eg: UofT student Card), and following the step step of taking a selfie, We would then compare the two image and check for similarity, which then verify the user identity relative to the associated work/education environment. Verified would then be able to share post along with their specified tags, tags that are verified by our platform.
 
 ## Development
 
-We start out by making picking the MERN Stack, Mongo, Express, React and Node. Since Graphql was incorporated in our design as well, we did some research on design and code practice the first few weeks. When creating our backend we follow setting and naming conventions, such that each Model has its own file (type, mutation, query, resolver, Db) with both mongodb and graphql. On the Frontend we used React same with the backend we followed convention by creating components so it could be used from other pages when necessary, api and actions to handle CRUD, Create, Read, Update and Delete. React router is used for our app's routing. Node Express with sessions and cookies are used to authenticate users. When a user first signs up, their passwords are stored as salted hash in our MongoDB database and this is used to authenticate using bcrypt. Google Cloud Vision and AWS Rekognition to identify a user's organization from their ID and verify it is their own ID. This is done in two parts, logo detection by Vision and identity verification by Rekognition. Two photos of the user are obtained using their webcam through React Webcam, this image is stored as base64 and sent to the backend which forwards it to AWS and Google to get a response.
+We start out by picking the MERNG Stack, Mongo, Express, React and Node. Since Graphql was incorporated in our design as well, we did some research on design and code practice the first few weeks. When creating our backend we follow setting and naming conventions, such that each Model has its own file (type, mutation, query, resolver, Db) with both mongodb and graphql. On the Frontend we used React same with the backend we followed convention by creating components so it could be used from other pages when necessary, api and actions to handle CRUD, Create, Read, Update and Delete. React router is used for our app's routing. Node Express with sessions and cookies are used to authenticate users. When a user first signs up, their passwords are stored as salted hash in our MongoDB database and this is used to authenticate using bcrypt. Google Cloud Vision and AWS Rekognition to identify a user's organization from their ID and verify it is their own ID. This is done in two parts, logo detection by Vision and identity verification by Rekognition. Two photos of the user are obtained using their webcam through React Webcam, this image is stored as base64 and sent to the backend which forwards it to AWS and Google to get a response.
 
 ## Deployment
 
@@ -60,9 +51,3 @@ We test our functionality thoroughly to make sure functionality is on par. We in
 - Connecting frontend and backend application
 - Post functionality: Display dynamically along with eact Create, Like, Dislike, Delete operation.
 - Comment functionality: Display dynamically along with eact Create, Delete operation.
-
-# One more thing?
-
-### Any additional comments you want to share with the course staff?
-
-Our app uses sessions and cookies for user authentication, as done in the homework assignments. However, due to some issues with NGINX reverse proxy and SSL certificates, we were not able to use this in production. We spent quite some time trying to fix this issue but were unsuccessful. We understand using local storage for storing usernames is not safe but had to do this to get the app working.
