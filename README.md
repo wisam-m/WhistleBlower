@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is an online social web platform where users can create, sign up, and log in to make posts about their workplaces. Users can create stories and post about their work to share their experiences with their respective communities. Users who are not logged in can browse posts and comments, while those who are logged in can create posts and comments. There is also a verification step where users can take a picture of their ID (e.g., UofT student card) and follow the steps to take a selfie. The system then compares the two images to check for similarity, which verifies the user's identity relative to the associated work or education environment. Verified users can then share posts along with their specified tags, which are verified by the platform.
+This is an online social web platform where users can create, sign up, and log in to make posts about their workplaces. Users can create stories and post about their work to share their experiences with their respective communities. Users who are not logged in can browse posts and comments, while those who are logged in can create posts and comments. There is also a verification step where users can take a picture of their ID (e.g., UofT student card) and follow the steps to take a selfie. The system then compares the two images to check for similarity, which verifies the user's identity relative to the associated work or education environment. Verified users can then share posts along with their verified tags.
 
 ## Development
 
