@@ -16,12 +16,6 @@ The project consists of two separate applications: a React frontend and a Node b
 
 GitLab is used to monitor the applications, which notifies the team if a build fails in the CI/CD pipeline so that they can roll back to a previous version (which are also saved). It saves logs when errors occur in the builds so that they can be fixed. It can also show the health of the application by displaying metrics such as memory and processor usage.
 
-## Challenges
-
-1. CI/CD Containerized Docker applications stored on VM
-2. Learning React, Docker, Mongo, Graphql, GitLab, Digitalocean. The amount of content is extremely dense with the limited time span.
-3. Making Frontend dynamically responsive.
-
 ## Top features
 
 - Logo Identification with Google Cloud Vision with React Webcam
