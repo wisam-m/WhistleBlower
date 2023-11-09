@@ -10,21 +10,15 @@ We start out by picking the MERNG Stack, Mongo, Express, React and Node. Since G
 
 ## Deployment
 
-### Explain how you have deployed your application.
-
 We have two separate applications, a React Frontend and a Node backend, both of which are containerized with Docker. We use GitLab for CI/CD which mirrors our GitHub repository for any commits, then runs a script which builds the container image and runs it on the VM. The VM is an Ubuntu server hosted on DigitalOcean. We used two VMs, one for the frontend and one for the backend as it will be easier to scale. We use Cloud MongoDB for our database.
 
 ## Maintenance
-
-### Explain how you monitor your deployed app to make sure that everything is working as expected.
 
 We use GitLab for monitoring our applications which notifies us if a build failed in the CI/CD pipeline so we can roll back to a previous version build which are also saved. It saves logs if errors happen in our build so that we can fix them. It can also show us the health of our application by viewing metrics such as memory and processor usage.
 
 We test our functionality thoroughly to make sure functionality is on par. We incorporate codes, such that if there are functionality issues when a new feature is added we can identify the source of the bug efficiently. Although, it's frustrating to mention deployment had shown to be an unsuspected hurdle.
 
 ## Challenges
-
-### What are the top 3 most challenging things that you have learned/developed for your app? Please restrict your answer to only three items.
 
 1. CI/CD Containerized Docker applications stored on VM
 2. Learning React, Docker, Mongo, Graphql, GitLab, Digitalocean. The amount of content is extremely dense with the limited time span.
