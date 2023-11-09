@@ -1,0 +1,45 @@
+import React from "react";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import { reducers } from "./reducers/index.js";
+import App from "./App";
+import Layout from "./Layout";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import ReactDOM from "react-dom";
+import Login from "./components/Login/Login";
+import SignUp from "./components/Signup/Signup";
+<<<<<<< Updated upstream
+import GetTags from "./components/GetTags/GetTags.js";
+=======
+// import Comments from "./components/Comments/Comments.js";
+// import SinglePost from "./components/SinglePost/SinglePost.js";
+import SinglePost from "./SinglePost";
+>>>>>>> Stashed changes
+
+const store = createStore(reducers, compose(applyMiddleware(thunk)));
+
+export default function Index() {
+  return (
+    <Provider store={store}>
+      <Router>
+        <Layout />
+        <Switch>
+<<<<<<< Updated upstream
+          <Route exact path='/' component={App} />
+          <Route path='/login' component={Login} />
+          <Route path='/signup' component={SignUp} />
+          <Route path='/gettags' component={GetTags} />
+=======
+          <Route exact path="/" component={App} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/:postId" component={SinglePost} />
+>>>>>>> Stashed changes
+        </Switch>
+      </Router>
+    </Provider>
+  );
+}
+
+ReactDOM.render(<Index />, document.getElementById("root"));
